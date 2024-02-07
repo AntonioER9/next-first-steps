@@ -1,5 +1,5 @@
-import Image from "next/image";
 
+import Link from "next/link";
 //Página principal de la aplicación.
 export default function Home() {
   return (
@@ -7,6 +7,8 @@ export default function Home() {
       <span className="text-5xl">
         Hola mundo
       </span>
+
+      <Link href={'/about'}>About Page</Link>
     </main>
   );
 }
